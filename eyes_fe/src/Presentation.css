@@ -1,0 +1,87 @@
+.presentation-container {
+    background: linear-gradient(90deg, rgba(197,229,103,1) 0%, rgba(42,187,155,1) 35%, rgba(5,117,230,1) 100%);
+    color: white;
+    padding: 4.3%;  
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+    padding-right: 5%;
+}
+
+
+.video-text-container {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.intro_text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro-texts {
+    font-size: 19px;
+    max-width: 550px;
+  
+}
+
+.text-containers {
+    max-width: 100;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.text-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.text-descriptions {
+    font-size: 15px;
+    line-height: 1.7; /* une valeur plus grande espacera davantage les lignes */
+    max-width: 80%; /* augmenter la largeur maximale du texte */
+    margin-left: 50%;
+    margin-top: -22%;
+}
+
+
+.video-container {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top: 25px;
+    overflow: hidden;
+    width: 45%;
+    /* Pour garantir que la vidéo s'adapte à la hauteur de son conteneur,
+       vous pouvez définir une hauteur spécifique pour le conteneur */
+    height: 250px; 
+}
+
+.video-container video {
+    /* Faire en sorte que la vidéo occupe toute la largeur et la hauteur de son conteneur */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cette propriété garantit que la vidéo couvre tout l'espace disponible,
+                           même si son ratio d'aspect est différent de celui du conteneur.
+                           Cela peut cependant entraîner le rognage de certaines parties de la vidéo. */
+    transition: filter 0.3s ease; 
+}
+
+.video-container.paused video {
+    filter: blur(2px);
+}
+
+.video-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

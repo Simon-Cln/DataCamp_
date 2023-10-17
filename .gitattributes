@@ -1,0 +1,5 @@
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.pyd filter=lfs diff=lfs merge=lfs -text
+*.lib filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+eyes_be/model.h5 !text !filter !merge !diff

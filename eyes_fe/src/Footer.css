@@ -1,0 +1,31 @@
+.footer {
+    background: #000000;
+    height: 13vh; /* Converti de 110px à 10vh pour le rendre réactif à la hauteur de la fenêtre */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+    padding: 2vw;  /* Converti le padding en vw pour le rendre réactif à la largeur de la fenêtre */
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+    padding: 2vw; /* Converti le padding en vw */
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #C5E567;
+}

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: 'Sharp Grotesk Book 25 Regular';
+  src: url('./fonts/fonttt.woff2') format('woff2'),
+       url('./fonts/fontt.woff') format('woff'),
+       url('./fonts/fontruetype.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

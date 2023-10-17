@@ -1,0 +1,16 @@
+/* CSS - VerticalLine.css */
+
+.vertical-line {
+    position: absolute;
+    top: 80px; /* la hauteur de la navbar, ajuster en fonction de la taille réelle de votre navbar */
+    left: 8%; /* ajuster pour déplacer la ligne vers la gauche ou la droite */
+    height: calc(191.5% - 80px); /* la hauteur totale de la fenêtre moins la hauteur de la navbar */
+    width: 0.5px;
+    background-color: white;
+    z-index: 0;
+}
+
+
+body {
+    margin: 0;
+}

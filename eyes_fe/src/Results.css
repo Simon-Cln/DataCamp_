@@ -1,0 +1,275 @@
+.results-container {
+    background-color: #000;
+    color: #fff;
+    height: 155vh;
+    max-height: 150vh;
+    overflow: hidden;  /* Ajout de cette ligne pour bloquer le défilement */
+    z-index: -2;
+}
+
+
+@keyframes levitate {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.image-containerrr img {
+    transition: box-shadow 0.3s ease, filter 0.3s ease;  /* Animation */
+    border-radius: 10px;  /* Bordure arrondie */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);  /* Ombre portée initiale */
+    filter: brightness(1.1);  /* Filtre de luminosité */
+    animation: levitate 2s infinite;  /* Appliquer l'animation de lévitation */
+    width: 23%;
+    margin: 0 1%;
+}
+
+.image-containerrr img:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);  /* Ombre plus prononcée sur Hover */
+}
+
+.image-containerrr {
+    position: absolute;
+    top: 57%;
+    left: 37%;  /* Ajustez cette valeur pour la positionner à droite de la barre verte. Si 30% ne convient pas, ajustez cette valeur. */
+    transform: translateY(-50%);  /* Centrage vertical */
+    z-index: 1;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.arc1, .arc2 {
+    position: absolute;
+    border: 10px solid;
+    border-radius: 50%;
+    width: 35%;
+    height: 70%;
+    right: 30%;
+    bottom: 0;
+    z-index: 0;
+}
+
+.arc1 {
+    border-color: #3498db transparent transparent transparent;
+}
+
+.arc2 {
+    border-color: #2980b9 transparent transparent transparent;
+}
+
+.prediction-result {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    z-index: 2;
+    font-size: 3em;
+    max-width: 45%;  /* Largeur maximale définie ici */
+    white-space: pre-line;  /* Pour conserver les retours à la ligne */
+}
+
+.text-below-image {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    z-index: 2;
+    font-size: 1.2em;
+    max-width: 60%;  /* Largeur maximale définie ici */
+}
+
+.bottom-left-text {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    z-index: 2;
+    font-size: 1.2em;
+}
+
+
+.certainty-bar {
+    margin-top: 10px;
+    width: 20vw;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.certainty-bar-fill {
+    height: 100%;
+    background-color: lime;
+    border-radius: 18px;
+    transition: width 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.error-message {
+    position: absolute;
+    bottom: 5%;
+    left: 60%;
+}
+
+.model-info {
+    position: absolute;
+    top: 31%;  /* Ajustez cette valeur en fonction de la position souhaitée */
+    left: 10%;
+    z-index: 2;
+    font-size: 1.02em;
+    max-width: 47%;
+}
+
+
+.arrow {
+    position: absolute;
+    left: 2%;
+    bottom: 15%;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #fff;
+    opacity: 0.7;
+}
+.doctor-image {
+    position: absolute;
+    top: 5%;
+    right: -31%;
+    width: 75%;
+    z-index: 1;
+}
+
+.doctor-image img {
+    width: 51%;
+    display: block;
+}
+
+.doctor-image:hover img {
+    filter: blur(5px);
+    cursor: pointer;
+}
+
+
+.doctor-image:hover .hover-text {
+    display: block;
+}
+
+.box, .box2 {
+    position: absolute;
+    top: 50%;
+    right: 0%; /* ajustement pour le déplacer vers la droite */
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.box {
+    background: #68A4FF;
+    width: 47%; /* ajusté pour le rendre plus petit */
+    height: 100%; /* ajusté pour le rendre plus petit */
+    border-radius: 100% 0 0;
+}
+
+.box2 {
+    background: #B4D2FF;
+    width: 39%; /* ajusté pour le rendre plus petit que .box */
+    height: 80%; /* ajusté pour le rendre plus petit que .box */
+    border-radius: 100% 0 0;
+    top: 60%;
+}
+h1{
+    color : #B4D2FF;
+}
+
+.prediction-result p{
+    font-size: 0.4em;
+}
+
+.text-below-image p{
+    font-size: 0.8em;
+    color : #68A4FF;
+    max-width: 65%;
+}
+
+.underline-text {
+    text-decoration: underline;
+    /*font-style: italic;*/
+    font-size: 0.72em;
+    color : #B4D2FF;  
+}
+
+.highlight {
+    font-style: italic;
+    color: #B4D2FF;
+}
+
+.important {
+    font-weight: bold;
+    color: #F0E68C;  /* jaune clair */
+}
+
+.warning {
+    color: #FF6347;  /* rouge tomate */
+    text-decoration: underline;
+}
+
+.advice {
+    color: #32CD32;  /* vert lime */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.analysis-container {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50%; 
+    font-size: 0.6em;
+}
+
+.bottom-left-text {
+    flex: 1;
+    max-width: 55%;  /* ajustez cette valeur */
+    font-size: 1.2em;
+    z-index: 2;
+}
+
+.hover-prompt, 
+.bottom-left-text > div > p {
+    z-index: 1;  /* Augmentez le z-index */
+    position: absolute;  /* Positionnez le texte absolument à l'intérieur de la barre */
+    top: 50%;  /* Centrez-le verticalement */
+    transform: translateY(-50%);  /* Centrez-le verticalement */
+    left: 10px;  /* Un peu de marge à gauche pour éviter qu'il ne colle à la barre */
+    font-size: 0.7em;
+    color: black;
+    font-weight: bold;
+}
+
+
+.hover-text-container {
+    z-index: 9999;
+    width: 20vw;  /* Ajusté pour correspondre à la largeur de la barre */
+    color: white;
+    font-size: 1.15em;
+    font-weight: bold;
+    position: absolute;  
+    top: calc(50% + 40px);  /* Positionnement sous la barre */
+    left: 10%;  /* Assurez-vous qu'il démarre à partir du bord gauche */
+    top: 10px;
+    font-size: 1.2em;
+}
