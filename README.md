@@ -1,6 +1,6 @@
 # BreakThrough_
 **Overview**
-This repository contains the codebase for [a brief description of your project, e.g., "an image classification project using deep learning"].
+- This repository contains the codebase for an eye cancer image classification project. The main objective is to develop a tool capable of detecting cancer in eyes using a dataset of eye images. The user can upload an image of an eye through a web interface and receive feedback regarding the likelihood of that eye having cancer. This solution will soon integrate cloud services for image preprocessing and classification. 
 
 **Structure**
 The repository is organized as follows:
@@ -23,7 +23,7 @@ Navigate to the Project Directory:
 cd [Your Repo Name]
 
 
-**Backend Setup:**
+## **Backend Setup:**
 
 
 - Navigate to the backend directory (eyes_be):
