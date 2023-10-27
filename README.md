@@ -7,7 +7,7 @@ The repository is organized as follows:
 
 - .github/workflows: Contains workflows for Azure App deployment.
 eyes_be and eyes_fe: Backend and frontend directories, respectively.
-public: [Briefly describe this directory's purpose, if known]
+
 - src: Contains the source code for the frontend application.
 - Other root level files: Include configuration files for git and package management.
 
